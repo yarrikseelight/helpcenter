@@ -1,0 +1,57 @@
+
+{% extends 'helpcenterapp/base.html' %}
+{% load static %}
+
+{% block page_title %}Help Center{% endblock page_title %}
+{% block css_url %}{% static 'helpcenterapp/helpcentermain.css' %}{% endblock css_url %}
+
+
+{% block content %}
+<section class="main_section">
+    <div class="main_div">
+        <h1>How can we help you?</h1>
+        <form>
+            {% csrf_token %}
+            {{form.search_query}}
+        </form>
+    <div>
+</section>
+<section class="cards_section">
+    <div class="cards_div">
+        {% for category in categories %}
+        <a class="anchor" href="{% url 'articles' slug=category.slug %}"><div class="card">
+            <img src="{{ category.image.url }}">
+           <h3>{{category.name}}</h3> 
+        </div></a>
+        {% endfor %}
+        {% comment %} <a class="anchor"><div class="card">
+            <img src={% static 'helpcenterapp/img/vector.jpg' %}>
+           <h3>Getting Started</h3> 
+        </div></a>
+        <a class="anchor"><div class="card">
+            <img src={% static 'helpcenterapp/img/vector.jpg' %}>
+           <h3>Billing and Subscriptions</h3> 
+        </div></a>
+        <a class="anchor"><div class="card">
+            <img src={% static 'helpcenterapp/img/vector.jpg' %}>
+           <h3>Account and Settings</h3> 
+        </div></a>
+        <a class="anchor"><div class="card">
+            <img src={% static 'helpcenterapp/img/vector.jpg' %}>
+           <h3>Getting Started</h3> 
+        </div></a>
+        <a class="anchor"><div class="card">
+            <img src={% static 'helpcenterapp/img/vector.jpg' %}>
+           <h3>Getting Started</h3> 
+        </div></a>
+        <a class="anchor"><div class="card">
+            <img src={% static 'helpcenterapp/img/vector.jpg' %}>
+           <h3>Getting Started</h3>  {% endcomment %}
+        </div></a>      
+    <div>
+</section>
+<section class="contact">
+</section>
+
+
+{% endblock content %}

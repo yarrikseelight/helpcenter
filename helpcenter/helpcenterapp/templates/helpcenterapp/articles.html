@@ -1,0 +1,35 @@
+{% extends 'helpcenterapp/base.html' %}
+{% load static %}
+
+{% block page_title %}Support - {{category.name}}{% endblock page_title %}
+{% block css_url %}{% static 'helpcenterapp/articles.css' %}{% endblock css_url %}
+
+
+{% block content %}
+<div class="maindiv">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="{% url 'helpcenter' %}">Home</a></li>
+            <li><a>{{category.name}}</a></li>
+        </ul>
+    </div>
+    <h2>{{category.name}}</h2>
+    
+    <div class="articles">
+        {% for subcategory in subcategories %}
+        <div class="subdiv">
+        <h3>{{subcategory.name}}</h3>
+        <ul>
+            {% for article in subcategory.articles.all %}
+            <li><a href="{% url 'article' slug=category.slug slug2=article.slug %}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+        </div>
+        {% endfor %}
+        
+    </div>
+    <div class="faq">
+        
+    </div>
+</div>
+{% endblock content %}
