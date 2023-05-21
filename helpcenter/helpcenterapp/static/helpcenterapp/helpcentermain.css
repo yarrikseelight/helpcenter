@@ -27,14 +27,37 @@
 }
 
 
+.search_container {
+  position: relative;
+  display: inline-block;
+}
+
 .searchfield {
     height: 2.2rem;
     width: 80vw;
     max-width: 700px;
     border: 1px solid #1d242b;
     border-radius: 30px;
-    margin: 1rem;
     padding: 7px;
+    
+}
+
+.search_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  padding: 8px;
+  margin-right: 0px;
+  height: 2.6rem;
+  width: 6rem;
+  background-color: rgb(5, 90, 170);
+  border-radius: 20px;
+  border: none;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 1rem;
 }
 
 .cards_section {
