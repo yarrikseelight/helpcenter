@@ -27,7 +27,6 @@ The reusable app itself is located in the helpcenterapp/ directory - you can cop
 - **Category and Subcategory System**: Articles are organized into categories and subcategories 🗂️.
 - **Video Embedding**: Embed YouTube videos directly into articles 🎥.
 - **Rich Text**: Articles support rich text formatting, including bullet points, images, and more ✍️.
-- **FAQ Section**: Add frequently asked questions related to each article ❓.
 - **Responsive Design**: The app is fully responsive, with layouts that adjust for smaller screens 📱.
 
 ---
