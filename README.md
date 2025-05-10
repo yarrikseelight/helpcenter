@@ -11,12 +11,12 @@ The reusable app itself is located in the helpcenterapp/ directory — you can c
 
 - [Features](#features-)
 - [Installation](#installation-%EF%B8%8F)
-    - [Step 1: Copy the App](#step-1-copy-the-app-)
+    - [Step 1: Copy the App](#step-1-copy-the-app-to-your-project-)
     - [Step 2: Install Dependencies](#step-2-install-dependencies-)
-    - [Step 3: Add to Installed Apps](#step-3-add-to-installed-apps-)
+    - [Step 3: Add to Installed Apps](#step-3-add-the-app-to-installed_apps-%EF%B8%8F)
     - [Step 4: Set Up URLs](#step-4-set-up-urls-)
-    - [Step 5: Migrate the Database](#step-5-migrate-the-database-)
-    - [Step 6: Static and Media URL Patterns](#step-6-static-and-media-url-patterns-)
+    - [Step 5: Migrate the Database](#step-5-migrate-the-database-%EF%B8%8F)
+    - [Step 6: Static and Media URL Patterns](#step-6-add-media-and-static-url-patterns-)
 - [Usage](#usage-)
 - [Optional Configuration](#optional-configuration-%EF%B8%8F)
 
