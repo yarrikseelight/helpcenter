@@ -1,0 +1,36 @@
+{% extends 'helpcenterapp/base.html' %}
+{% load static %}
+
+{% block page_title %}Support - {{ article.title }}{% endblock page_title %}
+{% block css_url %}{% static 'helpcenterapp/articles.css' %}{% endblock css_url %}
+
+{% block content %}
+<div class="maindiv">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="{% url 'helpcenter' %}">Home</a></li>
+            <li><a href="{% url 'articles' slug=category.slug %}">{{ category.name }}</a></li>
+            <li><a href="#">{{ article.title }}</a></li>
+        </ul>
+    </div>
+
+    <h2 class="article-title">{{ article.title }}</h2>
+
+    <div class="article-text">
+        {% if article.video_url %}
+        <div class="video">
+            <iframe width="1000" height="562" 
+                    src="{{ article.video_url }}"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+            </iframe>
+        </div>
+        {% endif %}
+
+        {{ article.content|safe }}
+    </div>
+</div>
+{% endblock content %}

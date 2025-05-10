@@ -19,7 +19,7 @@ body {
 .breadcrumb {
     display: flex;
     flex-direction: row;
-   
+    margin-bottom: 10px;
 }
 
 .breadcrumb ul{
@@ -107,10 +107,52 @@ a:hover{
     max-width: 900px;
 }
 
+.article-text {
+    margin: 10px;
+    padding: 40px;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    height: auto;
+    width: 1100px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    line-height: 1.8rem;
+}
+
+
+.article-text li p {
+    margin: 0;
+    display: inline;
+}
+
+
+.video {
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     .subdiv {
         width: 100%;
         padding-bottom: 25px;
+    }
+
+    .breadcrumb ul{
+        text-align: center;
+    }
+
+    .article-title {
+        text-align: center;
+    }
+
+    .video iframe{
+        height: 315px;
+        width: 560px;
     }
   }
