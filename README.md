@@ -1,8 +1,9 @@
 # Django Help Center App 🧑‍💻📚
 
-This is a reusable Django app for creating a support/help center, including article management, video embedding, FAQs, and search functionality. The app is designed to be easily integrated into any Django project. 
+This is a reusable Django app for creating a support/help center, including article management, video embedding, FAQs, and a search bar. The app is designed to be easily integrated into any Django project. 
 
-**Note**: The app includes a built-in search bar, but it does not have any search algorithms. Please feel free to implement your own search functionality according to your requirements. 
+**📁 Note**: This GitHub repository contains a complete Django project for demonstration purposes.
+The reusable app itself is located in the helpcenterapp/ directory — you can copy this folder into your own Django project to integrate the Help Center functionality. 
 
 ## Features 🌟
 
