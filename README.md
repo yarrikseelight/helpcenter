@@ -7,7 +7,7 @@ The reusable app itself is located in the helpcenterapp/ directory — you can c
 
 **📁 Note 2**: The app includes a built-in search bar, but it does not have any search algorithms. Please feel free to implement your own search functionality according to your requirements. 
 
-![Picture](helpcenterapp/readme_img.png)
+![Picture](helpcenter/readme_img.png)
 
 ## Table Of Contents
 
